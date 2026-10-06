@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | NIMS Tatkal Seva & NIMS Hospital</title>
+  <meta name="description"
+    content="Learn about NIMS Hospital Jaipur and NIMS Tatkal Seva — 24x7 digital healthcare platform for ICU bed booking, OPD, ambulance, and diagnostic care.">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@600;700;800&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --bg: #09090b;
+      --card-bg: rgba(255, 255, 255, 0.045);
+      --card-border: rgba(215, 173, 85, 0.25);
+      --red: #c40000;
+      --crimson: #ff1a1a;
+      --gold: #d7ad55;
+      --gold-light: #f6d288;
+      --text: #f5f5f5;
+      --text-muted: #bbb;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: linear-gradient(180deg, #140000 0%, #080808 55%, #050505 100%);
+      color: var(--text);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      min-height: 100vh;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Top Sticky Navigation Bar */
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(12, 4, 4, 0.88);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(215, 173, 85, 0.25);
+      padding: 12px 20px;
+    }
+
+    .nav-container {
+      max-width: 1050px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .nav-logo-badge {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #ffffff;
+      padding: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid var(--gold);
+      box-shadow: 0 0 12px rgba(215, 173, 85, 0.35);
+      flex-shrink: 0;
+    }
+
+    .nav-logo-badge img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .nav-brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav-brand-title {
+      font-size: 16px;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+      color: #ffffff;
+    }
+
+    .nav-brand-sub {
+      font-size: 11px;
+      color: var(--gold-light);
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-back-home {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(215, 173, 85, 0.4);
+      color: var(--gold-light);
+      font-size: 13px;
+      font-weight: 700;
+      transition: all 0.2s ease;
+    }
+
+    .btn-back-home:hover {
+      background: rgba(215, 173, 85, 0.2);
+      border-color: var(--gold-light);
+      color: #ffffff;
+      transform: translateY(-1px);
+    }
+
+    .btn-call-nav {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #c40000, #900000);
+      border: 1px solid var(--gold);
+      color: #ffffff;
+      font-size: 12.5px;
+      font-weight: 800;
+      transition: all 0.2s ease;
+    }
+
+    .btn-call-nav:hover {
+      background: linear-gradient(135deg, #e60000, #b00000);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(220, 0, 0, 0.4);
+    }
+
+    /* Page Container */
+    .page-main {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 34px 18px 48px;
+    }
+
+    /* Breadcrumbs */
+    .breadcrumbs {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12.5px;
+      color: var(--gold-light);
+      margin-bottom: 18px;
+    }
+
+    .breadcrumbs a {
+      color: var(--gold-light);
+      opacity: 0.8;
+      transition: opacity 0.2s;
+    }
+
+    .breadcrumbs a:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+
+    .breadcrumbs span {
+      opacity: 0.5;
+    }
+
+    /* Hero Header */
+    .about-header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 14px;
+      border-radius: 999px;
+      background: rgba(215, 173, 85, 0.12);
+      border: 1px solid rgba(215, 173, 85, 0.35);
+      color: var(--gold-light);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .badge-dot {
+      width: 6px;
+      height: 6px;
+      background: #ff2222;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #ff2222;
+    }
+
+    .about-header h1 {
+      font-size: clamp(28px, 5vw, 46px);
+      font-weight: 900;
+      letter-spacing: -1px;
+      color: #ffffff;
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+
+    .about-header p {
+      font-size: clamp(14px, 2vw, 17px);
+      color: #d1d1d1;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    /* Content Cards */
+    .content-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 28px 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+      transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .content-card:hover {
+      border-color: rgba(215, 173, 85, 0.55);
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    .card-header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid rgba(215, 173, 85, 0.2);
+      padding-bottom: 14px;
+    }
+
+    .card-title-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .card-icon-badge {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(220, 0, 0, 0.2), rgba(215, 173, 85, 0.15));
+      border: 1px solid rgba(215, 173, 85, 0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+
+    .card-title-group h2 {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--gold-light);
+      letter-spacing: -0.3px;
+    }
+
+    .card-brand-logo-wrap {
+      background: #ffffff;
+      padding: 6px 14px;
+      border-radius: 10px;
+      border: 1px solid rgba(215, 173, 85, 0.4);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card-brand-logo-wrap img {
+      height: 34px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .card-body p {
+      font-size: 15.5px;
+      line-height: 1.7;
+      color: #dedede;
+      margin-bottom: 14px;
+    }
+
+    .card-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .card-body strong {
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    /* Key Hospital Highlights Grid */
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .highlight-item {
+      background: rgba(255, 255, 255, 0.035);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 14px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .highlight-icon {
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    .highlight-text h4 {
+      font-size: 13.5px;
+      color: var(--gold-light);
+      margin-bottom: 2px;
+      font-weight: 700;
+    }
+
+    .highlight-text p {
+      font-size: 12px;
+      color: #aaa;
+      line-height: 1.4;
+      margin-bottom: 0;
+    }
+
+    /* Section Subheaders */
+    .section-head {
+      margin: 36px 0 18px;
+      text-align: left;
+    }
+
+    .section-head h3 {
+      font-size: 22px;
+      font-weight: 800;
+      color: #ffffff;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-head h3 span {
+      color: var(--gold-light);
+    }
+
+    .section-head p {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    /* Services Grid */
+    .services-detail-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+
+    .service-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 18px;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-2px);
+      background: rgba(255, 255, 255, 0.07);
+      border-color: rgba(215, 173, 85, 0.6);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    }
+
+    .service-card-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: rgba(220, 0, 0, 0.18);
+      border: 1px solid rgba(220, 0, 0, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+
+    .service-card-content h4 {
+      font-size: 15.5px;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 4px;
+    }
+
+    .service-card-content p {
+      font-size: 13px;
+      color: #bbb;
+      line-height: 1.5;
+    }
+
+    /* How It Works Steps */
+    .steps-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 16px;
+      margin-bottom: 36px;
+    }
+
+    .step-card {
+      background: rgba(255, 255, 255, 0.035);
+      border: 1px solid rgba(215, 173, 85, 0.25);
+      border-radius: 14px;
+      padding: 20px;
+      position: relative;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .step-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--gold-light);
+    }
+
+    .step-num-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #c40000, #800000);
+      border: 1.5px solid var(--gold);
+      color: #ffffff;
+      font-weight: 900;
+      font-size: 14px;
+      margin-bottom: 10px;
+      box-shadow: 0 0 10px rgba(220, 0, 0, 0.4);
+    }
+
+    .step-card h4 {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--gold-light);
+      margin-bottom: 6px;
+    }
+
+    .step-card p {
+      font-size: 13.5px;
+      color: #ccc;
+      line-height: 1.55;
+    }
+
+    /* App Download Section */
+    .download-cta-box {
+      background: linear-gradient(135deg, rgba(140, 0, 0, 0.45) 0%, rgba(20, 0, 0, 0.7) 100%);
+      border: 1.5px solid var(--gold);
+      border-radius: 18px;
+      padding: 32px 24px;
+      text-align: center;
+      margin: 36px 0;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.55);
+    }
+
+    .download-cta-box h3 {
+      font-size: clamp(22px, 4vw, 30px);
+      font-weight: 900;
+      color: #ffffff;
+      margin-bottom: 10px;
+      letter-spacing: -0.5px;
+    }
+
+    .download-cta-box p {
+      font-size: 15px;
+      color: #dedede;
+      max-width: 620px;
+      margin: 0 auto 22px;
+      line-height: 1.6;
+    }
+
+    .download-btns {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .store-badge-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 52px;
+      border-radius: 9px;
+      overflow: hidden;
+      background: #000000;
+      border: 1px solid rgba(255, 255, 255, .28);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, .45);
+      transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+      box-sizing: border-box;
+      text-decoration: none;
+    }
+
+    .store-badge-link:hover {
+      transform: translateY(-2px);
+      border-color: rgba(215, 173, 85, .85);
+      box-shadow: 0 9px 24px rgba(215, 173, 85, .25);
+    }
+
+    .store-badge-img {
+      height: 52px;
+      width: auto;
+      max-height: 52px;
+      display: block;
+      object-fit: contain;
+    }
+
+    .tagline-banner {
+      color: var(--gold-light);
+      font-size: 16px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      margin-top: 6px;
+    }
+
+    /* Emergency Section */
+    .emergency-strip {
+      background: linear-gradient(90deg, #8c0000, #d10000, #8c0000);
+      border: 1px solid var(--gold);
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .emergency-strip h3 {
+      font-size: 18px;
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+
+    .emergency-numbers {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .emergency-number {
+      background: #ffffff;
+      color: #111111;
+      border-radius: 10px;
+      padding: 10px 20px;
+      font-weight: 900;
+      font-size: 15px;
+      transition: transform 0.2s;
+      text-decoration: none;
+    }
+
+    .emergency-number:hover {
+      transform: translateY(-2px);
+    }
+
+    .emergency-number small {
+      display: block;
+      color: #666;
+      font-weight: 600;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 2px;
+    }
+
+    /* Footer */
+    .site-footer {
+      border-top: 1px solid rgba(215, 173, 85, 0.22);
+      padding: 30px 18px;
+      text-align: center;
+      color: #aaa;
+      font-size: 13px;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .footer-link {
+      color: var(--gold-light);
+      font-weight: 700;
+      font-size: 13px;
+      padding: 6px 14px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(215, 173, 85, 0.3);
+      transition: all 0.2s ease;
+    }
+
+    .footer-link:hover,
+    .footer-link.active {
+      background: rgba(215, 173, 85, 0.16);
+      border-color: rgba(215, 173, 85, 0.7);
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    .footer-sep {
+      color: rgba(215, 173, 85, 0.4);
+      font-size: 12px;
+    }
+
+    .footer-copy {
+      color: #888;
+      font-size: 12px;
+      margin-top: 6px;
+    }
+
+    @media(max-width: 600px) {
+      .top-nav {
+        padding: 10px 14px;
+      }
+
+      .btn-call-nav {
+        display: none;
+      }
+
+      .card-header-row {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .content-card {
+        padding: 20px 16px;
+      }
+
+      .download-btns {
+        gap: 10px;
+      }
+
+      .store-badge-link,
+      .store-badge-img {
+        height: 46px;
+        max-height: 46px;
+      }
+
+      .footer-links {
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Top Navigation -->
+  <header class="top-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand" aria-label="NIMS Tatkal Seva Home">
+        <div class="nav-logo-badge">
+          <img src="logo-nims-tatkal-seva-Photoroom.png" alt="NIMS Tatkal Seva Logo">
+        </div>
+        <div class="nav-brand-text">
+          <span class="nav-brand-title">NIMS TATKAL SEVA</span>
+          <span class="nav-brand-sub">Unit of NIMS Hospital, Jaipur</span>
+        </div>
+      </a>
+
+      <div class="nav-actions">
+        <a href="index.html" class="btn-back-home" aria-label="Return to Homepage">
+          <span>←</span> Back to Home
+        </a>
+        <a href="tel:+917412048766" class="btn-call-nav" aria-label="Call Emergency Helpline">
+          <span>🚨</span> Emergency: +91 74120 48766
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <strong>About Us</strong>
+    </nav>
+
+    <!-- Hero Header -->
+    <section class="about-header">
+      <div class="badge-pill">
+        <span class="badge-dot"></span>
+        <span>HEALTHCARE ECOSYSTEM</span>
+      </div>
+      <h1>About NIMS Hospital & Tatkal Seva</h1>
+      <p>Delivering trusted medical expertise, cutting-edge healthcare infrastructure, and rapid digital access 24 hours a day, 7 days a week.</p>
+    </section>
+
+    <!-- SECTION 1: About NIMS Hospital -->
+    <article class="content-card" id="about-hospital">
+      <div class="card-header-row">
+        <div class="card-title-group">
+          <div class="card-icon-badge">🏥</div>
+          <h2>About NIMS Hospital</h2>
+        </div>
+        <a href="https://nimshospitals.net/" target="_blank" rel="noopener" class="card-brand-logo-wrap" title="NIMS Hospital Official Website">
+          <img src="nims_hospital_logo.svg" alt="NIMS Hospital Jaipur">
+        </a>
+      </div>
+      <div class="card-body">
+        <p><strong>NIMS Hospital, Jaipur</strong> is a comprehensive healthcare institution committed to providing quality, accessible, and patient-focused healthcare. With modern medical infrastructure, experienced doctors, trained healthcare professionals, advanced diagnostic facilities, emergency care, critical care, OPD services, surgeries, and specialized treatments, NIMS Hospital provides a complete healthcare ecosystem for patients and their families.</p>
+      </div>
+
+      <div class="highlights-grid">
+        <div class="highlight-item">
+          <span class="highlight-icon">🩺</span>
+          <div class="highlight-text">
+            <h4>Experienced Doctors</h4>
+            <p>Renowned specialists across cardiology, neurology, orthopaedics & more.</p>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">🔬</span>
+          <div class="highlight-text">
+            <h4>Advanced Diagnostics</h4>
+            <p>State-of-the-art laboratory testing, MRI, CT, and rapid imaging facilities.</p>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">🚨</span>
+          <div class="highlight-text">
+            <h4>24x7 Critical Care</h4>
+            <p>Comprehensive Level-3 ICU units, trauma support, and emergency response.</p>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">🏥</span>
+          <div class="highlight-text">
+            <h4>Super-Speciality Care</h4>
+            <p>Multi-organ surgeries, robotic procedures, and comprehensive patient care.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- SECTION 2: About NIMS Tatkal Seva -->
+    <article class="content-card" id="about-tatkal-seva">
+      <div class="card-header-row">
+        <div class="card-title-group">
+          <div class="card-icon-badge">⚡</div>
+          <h2>About NIMS Tatkal Seva</h2>
+        </div>
+        <span class="badge-pill" style="margin-bottom:0;">
+          <span class="badge-dot" style="background:#22c55e; box-shadow:0 0 8px #22c55e;"></span>
+          DIGITAL HEALTHCARE PLATFORM
+        </span>
+      </div>
+      <div class="card-body">
+        <p><strong>NIMS Tatkal Seva</strong> is a digital healthcare platform designed to make healthcare services <strong>faster, easier, and more accessible</strong>. Patients can use the NIMS Tatkal Seva mobile app to access essential healthcare services from their smartphones.</p>
+      </div>
+    </article>
+
+    <!-- SECTION 3: Our Services -->
+    <section class="section-head">
+      <h3><span>Our Services</span></h3>
+      <p>Everything you need for urgent and planned medical requirements, accessible directly through our digital ecosystem.</p>
+    </section>
+
+    <div class="services-detail-grid">
+      <div class="service-card">
+        <div class="service-card-icon">🛏️</div>
+        <div class="service-card-content">
+          <h4>ICU Bed Booking</h4>
+          <p>Check and request ICU bed availability for critical care requirements.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card-icon">👨‍⚕️</div>
+        <div class="service-card-content">
+          <h4>OPD Booking</h4>
+          <p>Book your OPD visit conveniently with senior medical consultants.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card-icon">📅</div>
+        <div class="service-card-content">
+          <h4>Online Appointment</h4>
+          <p>Schedule appointments digitally and save valuable time.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card-icon">🚑</div>
+        <div class="service-card-content">
+          <h4>Ambulance Booking</h4>
+          <p>Request an ambulance when transportation and emergency life support are needed.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card-icon">🩺</div>
+        <div class="service-card-content">
+          <h4>Health Checkups</h4>
+          <p>Explore and book preventive health checkup packages for you and your family.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card-icon">🧪</div>
+        <div class="service-card-content">
+          <h4>Home Sample Collection</h4>
+          <p>Book diagnostic sample collection directly from the comfort of your home.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card-icon">💊</div>
+        <div class="service-card-content">
+          <h4>Health Packages</h4>
+          <p>Choose suitable health packages and comprehensive healthcare services.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 4: How NIMS Tatkal Seva App Works -->
+    <section class="section-head">
+      <h3><span>How NIMS Tatkal Seva App Works</span></h3>
+      <p>A simple 6-step workflow designed to deliver emergency and routine healthcare without waiting lines.</p>
+    </section>
+
+    <div class="steps-container">
+      <div class="step-card">
+        <div class="step-num-badge">1</div>
+        <h4>1. Download the App</h4>
+        <p>Download the <strong>NIMS Tatkal Seva app</strong> from the Google Play Store or Apple App Store.</p>
+      </div>
+
+      <div class="step-card">
+        <div class="step-num-badge">2</div>
+        <h4>2. Register / Login</h4>
+        <p>Create your account using your mobile number and complete the basic details.</p>
+      </div>
+
+      <div class="step-card">
+        <div class="step-num-badge">3</div>
+        <h4>3. Choose a Service</h4>
+        <p>Select the service you need — ICU Bed, OPD, Appointment, Ambulance, Health Checkup, Home Sample Collection, or Health Package.</p>
+      </div>
+
+      <div class="step-card">
+        <div class="step-num-badge">4</div>
+        <h4>4. Enter Required Details</h4>
+        <p>Provide the required patient and booking information.</p>
+      </div>
+
+      <div class="step-card">
+        <div class="step-num-badge">5</div>
+        <h4>5. Confirm Your Request</h4>
+        <p>Review the details and submit your booking/request.</p>
+      </div>
+
+      <div class="step-card">
+        <div class="step-num-badge">6</div>
+        <h4>6. Get Updates</h4>
+        <p>Receive booking confirmations and important updates through the app.</p>
+      </div>
+    </div>
+
+    <!-- SECTION 5: Download App CTA Box -->
+    <section class="download-cta-box">
+      <h3>Download the NIMS Tatkal Seva App</h3>
+      <p>Get convenient access to healthcare services directly from your smartphone. <strong>Download the NIMS Tatkal Seva app today</strong> and keep essential healthcare services just a tap away.</p>
+      
+      <div class="download-btns">
+        <a class="store-badge-link" href="https://play.google.com/store/apps/details?id=com.nimstatkalseva.android"
+          target="_blank" rel="noopener" aria-label="Get it on Google Play">
+          <img class="store-badge-img" src="google_play_badge.png" alt="Get it on Google Play">
+        </a>
+
+        <a class="store-badge-link" href="https://apps.apple.com/" target="_blank" rel="noopener"
+          aria-label="Download on the App Store">
+          <img class="store-badge-img" src="apple_badge.png" alt="Download on the App Store">
+        </a>
+      </div>
+
+      <div class="tagline-banner">
+        <strong>NIMS Tatkal Seva — 24×7 Care, Just a Tap Away.</strong>
+      </div>
+    </section>
+
+    <!-- SECTION 6: Emergency Contact Strip -->
+    <section class="emergency-strip">
+      <h3>🚨 24×7 Emergency & Ambulance Helpline</h3>
+      <div class="emergency-numbers">
+        <a class="emergency-number" href="tel:+917412048766">
+          <small>Emergency Helpline</small>
+          +91 74120 48766
+        </a>
+        <a class="emergency-number" href="tel:0141-2388999">
+          <small>Ambulance Service</small>
+          0141-23 88 999
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="index.html" class="footer-link">Home</a>
+      <span class="footer-sep">•</span>
+      <a href="about.html" class="footer-link active">About Us</a>
+      <span class="footer-sep">•</span>
+      <a href="terms.html" class="footer-link">Terms & Conditions</a>
+      <span class="footer-sep">•</span>
+      <a href="privacy.html" class="footer-link">Privacy Policy</a>
+    </div>
+    <p><b>NIMS Tatkal Seva — 24×7 Care, Just a Tap Away</b></p>
+    <p class="footer-copy">© 2026 NIMS Tatkal Seva. All Rights Reserved. Unit Of NIMS Hospital, Jaipur</p>
+  </footer>
+</body>
+
+</html>

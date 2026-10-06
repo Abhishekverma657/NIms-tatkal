@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | NIMS Tatkal Seva</title>
+  <meta name="description"
+    content="Privacy Policy of NIMS Tatkal Seva and NIMS Hospital Jaipur detailing how patient and user data is collected, protected, and used.">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@600;700;800&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --bg: #09090b;
+      --card-bg: rgba(255, 255, 255, 0.045);
+      --card-border: rgba(215, 173, 85, 0.25);
+      --red: #c40000;
+      --gold: #d7ad55;
+      --gold-light: #f6d288;
+      --text: #f5f5f5;
+      --text-muted: #bbb;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: linear-gradient(180deg, #140000 0%, #080808 55%, #050505 100%);
+      color: var(--text);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      min-height: 100vh;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Top Sticky Navigation Bar */
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(12, 4, 4, 0.88);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(215, 173, 85, 0.25);
+      padding: 12px 20px;
+    }
+
+    .nav-container {
+      max-width: 1050px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .nav-logo-badge {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #ffffff;
+      padding: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid var(--gold);
+      box-shadow: 0 0 12px rgba(215, 173, 85, 0.35);
+      flex-shrink: 0;
+    }
+
+    .nav-logo-badge img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .nav-brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav-brand-title {
+      font-size: 16px;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+      color: #ffffff;
+    }
+
+    .nav-brand-sub {
+      font-size: 11px;
+      color: var(--gold-light);
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-back-home {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(215, 173, 85, 0.4);
+      color: var(--gold-light);
+      font-size: 13px;
+      font-weight: 700;
+      transition: all 0.2s ease;
+    }
+
+    .btn-back-home:hover {
+      background: rgba(215, 173, 85, 0.2);
+      border-color: var(--gold-light);
+      color: #ffffff;
+      transform: translateY(-1px);
+    }
+
+    /* Page Container */
+    .page-main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 34px 18px 48px;
+    }
+
+    /* Breadcrumbs */
+    .breadcrumbs {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12.5px;
+      color: var(--gold-light);
+      margin-bottom: 18px;
+    }
+
+    .breadcrumbs a {
+      color: var(--gold-light);
+      opacity: 0.8;
+      transition: opacity 0.2s;
+    }
+
+    .breadcrumbs a:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+
+    .breadcrumbs span {
+      opacity: 0.5;
+    }
+
+    /* Privacy Header */
+    .legal-header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 14px;
+      border-radius: 999px;
+      background: rgba(215, 173, 85, 0.12);
+      border: 1px solid rgba(215, 173, 85, 0.35);
+      color: var(--gold-light);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .legal-header h1 {
+      font-size: clamp(26px, 5vw, 42px);
+      font-weight: 900;
+      letter-spacing: -1px;
+      color: #ffffff;
+      line-height: 1.15;
+      margin-bottom: 10px;
+    }
+
+    .legal-meta {
+      font-size: 13px;
+      color: #aaa;
+    }
+
+    /* Document Card */
+    .legal-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 36px 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+    }
+
+    .legal-section {
+      margin-bottom: 30px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+      padding-bottom: 24px;
+    }
+
+    .legal-section:last-child {
+      margin-bottom: 0;
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .legal-section h2 {
+      font-size: 18.5px;
+      font-weight: 800;
+      color: var(--gold-light);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .legal-section p {
+      font-size: 14.5px;
+      color: #d8d8d8;
+      margin-bottom: 12px;
+    }
+
+    .legal-section ul {
+      margin: 10px 0 14px 22px;
+      color: #ccc;
+      font-size: 14px;
+    }
+
+    .legal-section li {
+      margin-bottom: 8px;
+    }
+
+    .legal-section strong {
+      color: #ffffff;
+    }
+
+    .security-highlight-box {
+      background: rgba(34, 197, 94, 0.1);
+      border: 1px solid rgba(34, 197, 94, 0.35);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin: 18px 0;
+      color: #dcfce7;
+      font-size: 13.5px;
+    }
+
+    .security-highlight-box strong {
+      color: #86efac;
+    }
+
+    /* Footer */
+    .site-footer {
+      border-top: 1px solid rgba(215, 173, 85, 0.22);
+      padding: 30px 18px;
+      text-align: center;
+      color: #aaa;
+      font-size: 13px;
+      background: rgba(0, 0, 0, 0.4);
+      margin-top: 48px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .footer-link {
+      color: var(--gold-light);
+      font-weight: 700;
+      font-size: 13px;
+      padding: 6px 14px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(215, 173, 85, 0.3);
+      transition: all 0.2s ease;
+    }
+
+    .footer-link:hover,
+    .footer-link.active {
+      background: rgba(215, 173, 85, 0.16);
+      border-color: rgba(215, 173, 85, 0.7);
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    .footer-sep {
+      color: rgba(215, 173, 85, 0.4);
+      font-size: 12px;
+    }
+
+    .footer-copy {
+      color: #888;
+      font-size: 12px;
+      margin-top: 6px;
+    }
+
+    @media(max-width: 600px) {
+      .legal-card {
+        padding: 22px 18px;
+      }
+
+      .footer-links {
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Top Navigation -->
+  <header class="top-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand" aria-label="NIMS Tatkal Seva Home">
+        <div class="nav-logo-badge">
+          <img src="logo-nims-tatkal-seva-Photoroom.png" alt="NIMS Tatkal Seva Logo">
+        </div>
+        <div class="nav-brand-text">
+          <span class="nav-brand-title">NIMS TATKAL SEVA</span>
+          <span class="nav-brand-sub">Unit of NIMS Hospital, Jaipur</span>
+        </div>
+      </a>
+
+      <div class="nav-actions">
+        <a href="index.html" class="btn-back-home" aria-label="Return to Homepage">
+          <span>←</span> Back to Home
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <strong>Privacy Policy</strong>
+    </nav>
+
+    <!-- Header -->
+    <section class="legal-header">
+      <div class="badge-pill">PATIENT DATA PROTECTION</div>
+      <h1>Privacy Policy</h1>
+      <p class="legal-meta">Effective Date: January 1, 2026 | Last Updated: October 2026</p>
+    </section>
+
+    <!-- Content Card -->
+    <article class="legal-card">
+      <div class="legal-section">
+        <h2>1. Commitment to Patient Privacy</h2>
+        <p><strong>NIMS Tatkal Seva</strong>, operating as an official digital healthcare platform and unit of <strong>NIMS Hospital, Jaipur</strong> ("NIMS Hospital", "we", "us", or "our"), is dedicated to safeguarding the privacy, confidentiality, and security of our patients and app users.</p>
+        <p>This Privacy Policy explains how personal and medical information is collected, processed, stored, and protected when you use our mobile application and related web services (<a href="https://nimshospitals.net/" target="_blank" rel="noopener" style="color:var(--gold-light); text-decoration:underline;">nimshospitals.net</a>).</p>
+      </div>
+
+      <div class="security-highlight-box">
+        <strong>MEDICAL CONFIDENTIALITY PROMISE:</strong> We treat all health-related and medical consultation data with the strictest standards of clinical confidentiality. Your medical records are never sold, rented, or distributed to commercial advertisers.
+      </div>
+
+      <div class="legal-section">
+        <h2>2. Information We Collect</h2>
+        <p>In order to provide rapid healthcare bookings and emergency assistance, we collect the following categories of information:</p>
+        <ul>
+          <li><strong>Personal Identification Details:</strong> Patient full name, age, gender, primary mobile number, email address, and home or pickup address.</li>
+          <li><strong>Healthcare & Booking Data:</strong> Requested medical service (ICU bed booking, doctor OPD specialty, ambulance pickup, preventive checkup, or home diagnostic sample collection), relevant symptoms, and patient health notes submitted during booking.</li>
+          <li><strong>Location Information:</strong> Real-time GPS location data when you request ambulance pickup or home phlebotomy visits, ensuring accurate routing and minimal response delays.</li>
+          <li><strong>Technical & Device Data:</strong> Device model, operating system version, unique device identifiers, IP address, and app performance logs to diagnose technical errors.</li>
+        </ul>
+      </div>
+
+      <div class="legal-section">
+        <h2>3. How We Use Your Information</h2>
+        <p>We use the data collected strictly for clinical and operational healthcare functions:</p>
+        <ul>
+          <li>To schedule, confirm, and manage ICU bed requests, doctor appointments, and OPD visits.</li>
+          <li>To dispatch ambulance emergency teams to your exact coordinates with paramedic teams.</li>
+          <li>To coordinate phlebotomist home visits for diagnostic blood, urine, or pathology collections.</li>
+          <li>To deliver diagnostic laboratory reports and booking confirmation SMS or app notifications.</li>
+          <li>To comply with statutory healthcare guidelines, medical recordkeeping protocols, and government health mandates.</li>
+        </ul>
+      </div>
+
+      <div class="legal-section">
+        <h2>4. Use of Device Location Services</h2>
+        <p>The NIMS Tatkal Seva app requests access to your device location services solely when necessary for:</p>
+        <ul>
+          <li>Accurate ambulance emergency routing to the patient's current physical location.</li>
+          <li>Enabling home sample collection technicians to locate residential pickup addresses without delay.</li>
+        </ul>
+        <p>You may control or disable location permissions in your mobile device settings, though disabling location may necessitate manual address typing during emergency ambulance calls.</p>
+      </div>
+
+      <div class="legal-section">
+        <h2>5. Information Sharing and Disclosure</h2>
+        <p>We only share your information with parties directly involved in your care:</p>
+        <ul>
+          <li><strong>Hospital Medical Staff:</strong> Treating doctors, clinical triage nurses, ICU coordinators, and hospital administrative staff at NIMS Hospital, Jaipur.</li>
+          <li><strong>Emergency Personnel:</strong> Paramedics, ambulance drivers, and emergency response dispatchers.</li>
+          <li><strong>Diagnostic Laboratory Team:</strong> NIMS Hospital accredited lab technicians and certified phlebotomists.</li>
+          <li><strong>Legal Authorities:</strong> Only when strictly mandated by applicable Indian laws, judicial court orders, or statutory healthcare reporting regulations.</li>
+        </ul>
+      </div>
+
+      <div class="legal-section">
+        <h2>6. Data Security and Encryption</h2>
+        <p>We maintain stringent technical, physical, and administrative safeguards to protect your personal and medical information against unauthorized access, alteration, disclosure, or loss:</p>
+        <ul>
+          <li>End-to-end SSL/TLS cryptographic encryption for all network transmissions.</li>
+          <li>Secure cloud and server infrastructure with restricted role-based administrative access.</li>
+          <li>Periodic vulnerability assessments, firewalls, and data access audits.</li>
+        </ul>
+      </div>
+
+      <div class="legal-section">
+        <h2>7. Retention of Health Records</h2>
+        <p>Personal and health information is retained in accordance with the Indian Medical Council (Professional Conduct, Etiquette and Ethics) Regulations and applicable digital healthcare retention guidelines to ensure continuous clinical continuity for future treatments.</p>
+      </div>
+
+      <div class="legal-section">
+        <h2>8. Your Rights as a Patient</h2>
+        <p>You have the right to review, update, or request corrections to your personal information recorded in your account. You may also request deletion of non-clinical account credentials by submitting a verified request to our administrative desk, subject to statutory healthcare record preservation laws.</p>
+      </div>
+
+      <div class="legal-section">
+        <h2>9. Changes to this Privacy Policy</h2>
+        <p>We may update this Privacy Policy periodically to reflect enhancements in technology, service features, or applicable legal standards. Any revisions will be published here with an updated "Last Updated" timestamp.</p>
+      </div>
+
+      <div class="legal-section">
+        <h2>10. Contact Us & Data Protection Officer</h2>
+        <p>For questions, privacy inquiries, or data protection concerns, please contact the hospital administration:</p>
+        <ul>
+          <li><strong>Emergency Helpline:</strong> +91 74120 48766</li>
+          <li><strong>Ambulance Helpline:</strong> 0141-23 88 999</li>
+          <li><strong>Healthcare Institution:</strong> NIMS Hospital, Jaipur, Rajasthan, India</li>
+          <li><strong>Official Website:</strong> <a href="https://nimshospitals.net/" target="_blank" rel="noopener" style="color:var(--gold-light);">nimshospitals.net</a></li>
+        </ul>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="index.html" class="footer-link">Home</a>
+      <span class="footer-sep">•</span>
+      <a href="about.html" class="footer-link">About Us</a>
+      <span class="footer-sep">•</span>
+      <a href="terms.html" class="footer-link">Terms & Conditions</a>
+      <span class="footer-sep">•</span>
+      <a href="privacy.html" class="footer-link active">Privacy Policy</a>
+    </div>
+    <p><b>NIMS Tatkal Seva — 24×7 Care, Just a Tap Away</b></p>
+    <p class="footer-copy">© 2026 NIMS Tatkal Seva. All Rights Reserved. Unit Of NIMS Hospital, Jaipur</p>
+  </footer>
+</body>
+
+</html>

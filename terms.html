@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms & Conditions | NIMS Tatkal Seva</title>
+  <meta name="description"
+    content="Terms and Conditions of NIMS Tatkal Seva and NIMS Hospital Jaipur for ICU booking, OPD appointments, ambulance services, and diagnostics.">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@600;700;800&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --bg: #09090b;
+      --card-bg: rgba(255, 255, 255, 0.045);
+      --card-border: rgba(215, 173, 85, 0.25);
+      --red: #c40000;
+      --gold: #d7ad55;
+      --gold-light: #f6d288;
+      --text: #f5f5f5;
+      --text-muted: #bbb;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: linear-gradient(180deg, #140000 0%, #080808 55%, #050505 100%);
+      color: var(--text);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      min-height: 100vh;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Top Sticky Navigation Bar */
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(12, 4, 4, 0.88);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(215, 173, 85, 0.25);
+      padding: 12px 20px;
+    }
+
+    .nav-container {
+      max-width: 1050px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .nav-logo-badge {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #ffffff;
+      padding: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid var(--gold);
+      box-shadow: 0 0 12px rgba(215, 173, 85, 0.35);
+      flex-shrink: 0;
+    }
+
+    .nav-logo-badge img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .nav-brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav-brand-title {
+      font-size: 16px;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+      color: #ffffff;
+    }
+
+    .nav-brand-sub {
+      font-size: 11px;
+      color: var(--gold-light);
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-back-home {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(215, 173, 85, 0.4);
+      color: var(--gold-light);
+      font-size: 13px;
+      font-weight: 700;
+      transition: all 0.2s ease;
+    }
+
+    .btn-back-home:hover {
+      background: rgba(215, 173, 85, 0.2);
+      border-color: var(--gold-light);
+      color: #ffffff;
+      transform: translateY(-1px);
+    }
+
+    /* Page Container */
+    .page-main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 34px 18px 48px;
+    }
+
+    /* Breadcrumbs */
+    .breadcrumbs {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12.5px;
+      color: var(--gold-light);
+      margin-bottom: 18px;
+    }
+
+    .breadcrumbs a {
+      color: var(--gold-light);
+      opacity: 0.8;
+      transition: opacity 0.2s;
+    }
+
+    .breadcrumbs a:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+
+    .breadcrumbs span {
+      opacity: 0.5;
+    }
+
+    /* Legal Header */
+    .legal-header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 14px;
+      border-radius: 999px;
+      background: rgba(215, 173, 85, 0.12);
+      border: 1px solid rgba(215, 173, 85, 0.35);
+      color: var(--gold-light);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .legal-header h1 {
+      font-size: clamp(26px, 5vw, 42px);
+      font-weight: 900;
+      letter-spacing: -1px;
+      color: #ffffff;
+      line-height: 1.15;
+      margin-bottom: 10px;
+    }
+
+    .legal-meta {
+      font-size: 13px;
+      color: #aaa;
+    }
+
+    /* Document Card */
+    .legal-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 36px 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+    }
+
+    .legal-section {
+      margin-bottom: 30px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+      padding-bottom: 24px;
+    }
+
+    .legal-section:last-child {
+      margin-bottom: 0;
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .legal-section h2 {
+      font-size: 18.5px;
+      font-weight: 800;
+      color: var(--gold-light);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .legal-section p {
+      font-size: 14.5px;
+      color: #d8d8d8;
+      margin-bottom: 12px;
+    }
+
+    .legal-section ul {
+      margin: 10px 0 14px 22px;
+      color: #ccc;
+      font-size: 14px;
+    }
+
+    .legal-section li {
+      margin-bottom: 8px;
+    }
+
+    .legal-section strong {
+      color: #ffffff;
+    }
+
+    .alert-box {
+      background: rgba(196, 0, 0, 0.15);
+      border: 1px solid rgba(220, 0, 0, 0.45);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin: 18px 0;
+      color: #ffdede;
+      font-size: 13.5px;
+    }
+
+    .alert-box strong {
+      color: #ff6666;
+    }
+
+    /* Footer */
+    .site-footer {
+      border-top: 1px solid rgba(215, 173, 85, 0.22);
+      padding: 30px 18px;
+      text-align: center;
+      color: #aaa;
+      font-size: 13px;
+      background: rgba(0, 0, 0, 0.4);
+      margin-top: 48px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .footer-link {
+      color: var(--gold-light);
+      font-weight: 700;
+      font-size: 13px;
+      padding: 6px 14px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(215, 173, 85, 0.3);
+      transition: all 0.2s ease;
+    }
+
+    .footer-link:hover,
+    .footer-link.active {
+      background: rgba(215, 173, 85, 0.16);
+      border-color: rgba(215, 173, 85, 0.7);
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    .footer-sep {
+      color: rgba(215, 173, 85, 0.4);
+      font-size: 12px;
+    }
+
+    .footer-copy {
+      color: #888;
+      font-size: 12px;
+      margin-top: 6px;
+    }
+
+    @media(max-width: 600px) {
+      .legal-card {
+        padding: 22px 18px;
+      }
+
+      .footer-links {
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Top Navigation -->
+  <header class="top-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand" aria-label="NIMS Tatkal Seva Home">
+        <div class="nav-logo-badge">
+          <img src="logo-nims-tatkal-seva-Photoroom.png" alt="NIMS Tatkal Seva Logo">
+        </div>
+        <div class="nav-brand-text">
+          <span class="nav-brand-title">NIMS TATKAL SEVA</span>
+          <span class="nav-brand-sub">Unit of NIMS Hospital, Jaipur</span>
+        </div>
+      </a>
+
+      <div class="nav-actions">
+        <a href="index.html" class="btn-back-home" aria-label="Return to Homepage">
+          <span>←</span> Back to Home
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <strong>Terms & Conditions</strong>
+    </nav>
+
+    <!-- Header -->
+    <section class="legal-header">
+      <div class="badge-pill">LEGAL AGREEMENT</div>
+      <h1>Terms and Conditions</h1>
+      <p class="legal-meta">Effective Date: January 1, 2026 | Last Updated: October 2026</p>
+    </section>
+
+    <!-- Content Card -->
+    <article class="legal-card">
+      <div class="legal-section">
+        <h2>1. Acceptance of Terms</h2>
+        <p>Welcome to <strong>NIMS Tatkal Seva</strong>, a digital healthcare platform and mobile application service operated as an official healthcare initiative and unit of <strong>NIMS Hospital, Jaipur</strong> ("NIMS Hospital", "we", "our", or "us").</p>
+        <p>By downloading, browsing, registering on, or using the NIMS Tatkal Seva mobile application or website (<a href="https://nimshospitals.net/" target="_blank" rel="noopener" style="color:var(--gold-light); text-decoration:underline;">nimshospitals.net</a>), you acknowledge that you have read, understood, and agreed to be legally bound by these Terms and Conditions and our Privacy Policy. If you do not agree to these terms, please refrain from using the platform.</p>
+      </div>
+
+      <div class="alert-box">
+        <strong>CRITICAL MEDICAL NOTICE:</strong> NIMS Tatkal Seva enables digital booking and communication for healthcare services. For severe, life-threatening medical emergencies requiring immediate on-site stabilization, dial our 24x7 Emergency Helpline at <strong>+91 74120 48766</strong> or Ambulance at <strong>0141-23 88 999</strong> immediately.
+      </div>
+
+      <div class="legal-section">
+        <h2>2. Scope of Services</h2>
+        <p>NIMS Tatkal Seva connects patients and their caregivers with hospital healthcare infrastructure, facilitating:</p>
+        <ul>
+          <li><strong>ICU Bed Booking Requests:</strong> Digital checking and request submission for critical care and Intensive Care Unit (ICU) beds.</li>
+          <li><strong>OPD Consultations & Online Appointments:</strong> Scheduling in-person and digital consultations with certified doctors and medical specialists.</li>
+          <li><strong>Ambulance Transportation:</strong> Requesting emergency and patient transfer ambulances equipped with paramedic and life-support staff.</li>
+          <li><strong>Health Checkups & Preventive Packages:</strong> Exploration and booking of comprehensive wellness packages.</li>
+          <li><strong>Home Sample Collection:</strong> Booking certified phlebotomists for diagnostic and laboratory sample collection from residential addresses.</li>
+          <li><strong>Health Packages:</strong> Curated diagnostic, surgical, and therapeutic healthcare packages.</li>
+        </ul>
+      </div>
+
+      <div class="legal-section">
+        <h2>3. Bed Availability & ICU Booking Protocol</h2>
+        <p>Submitting an ICU Bed Booking request through the app does not guarantee instantaneous bed allotment until verified and confirmed by NIMS Hospital's Clinical Triage and Bed Management Department.</p>
+        <p>Critical care bed allotment is subject to patient medical acuity, doctor assessment, availability of specialized equipment (e.g., mechanical ventilators, ECMO, dialysis support), and verification of patient records upon arrival.</p>
+      </div>
+
+      <div class="legal-section">
+        <h2>4. User Registration and Account Security</h2>
+        <p>To access booking services, users must register using a valid mobile number and provide accurate information including patient full name, age, gender, contact number, and medical condition details.</p>
+        <p>You are responsible for maintaining the confidentiality of any one-time passwords (OTP) or authentication credentials sent to your device. Any activity originating from your verified account will be deemed authorized by you.</p>
+      </div>
+
+      <div class="legal-section">
+        <h2>5. Ambulance Dispatch and Transportation</h2>
+        <p>Ambulance requests dispatched via NIMS Tatkal Seva are operated under hospital emergency management protocols:</p>
+        <ul>
+          <li>Accurate location coordinates and landmark details must be provided by the caller.</li>
+          <li>Estimated Arrival Times (ETA) are subject to traffic conditions, weather, and distance from NIMS Hospital or dispatch hubs.</li>
+          <li>NIMS Hospital's emergency team reserves the right to prioritize cases according to medical urgency (triaging).</li>
+        </ul>
+      </div>
+
+      <div class="legal-section">
+        <h2>6. Appointments, OPD Consultations & Cancellations</h2>
+        <p>Doctor availability is subject to emergency surgeries and hospital rounds. In the event of emergency unavailability of a scheduled doctor, NIMS Hospital reserves the right to reschedule the appointment or offer consultation with an equivalent specialist.</p>
+        <p>Cancellations or rescheduling of appointments must be made at least two (2) hours prior to the scheduled slot via the app or hospital helpline.</p>
+      </div>
+
+      <div class="legal-section">
+        <h2>7. Home Diagnostic Sample Collection</h2>
+        <p>Home sample collections are conducted by trained phlebotomists adhering to sterile laboratory standards. Patients are responsible for observing necessary preparation instructions (e.g., fasting, medication restrictions) communicated prior to sample collection. Diagnostic test reports are generated under standard laboratory turnaround times.</p>
+      </div>
+
+      <div class="legal-section">
+        <h2>8. Payments, Billing & Refunds</h2>
+        <p>Fees for OPD consultations, ICU deposits, diagnostic tests, ambulance fuel/distance charges, and hospital admissions are determined as per official NIMS Hospital Jaipur tariff schedules.</p>
+        <p>Refunds, if applicable for cancelled bookings or unperformed diagnostic tests, will be processed to the original payment source within 5 to 7 business days as per hospital billing protocols.</p>
+      </div>
+
+      <div class="legal-section">
+        <h2>9. Intellectual Property</h2>
+        <p>All brand names, trademarks, logos, texts, illustrations, graphics, and interface designs associated with "NIMS Tatkal Seva" and "NIMS Hospital" are proprietary intellectual property. Unauthorized reproduction, modification, scraping, or distribution is strictly prohibited.</p>
+      </div>
+
+      <div class="legal-section">
+        <h2>10. Limitation of Liability</h2>
+        <p>While NIMS Hospital makes every effort to maintain continuous digital accessibility, the app is provided on an "as-is" and "as-available" basis. NIMS Hospital shall not be held liable for temporary technical outages, third-party network failures, telecommunication carrier delays, or circumstances beyond reasonable control.</p>
+      </div>
+
+      <div class="legal-section">
+        <h2>11. Governing Law & Jurisdiction</h2>
+        <p>These Terms and Conditions shall be governed by and construed in accordance with the laws of the Republic of India. Any disputes arising out of or in connection with the use of the platform shall be subject to the exclusive jurisdiction of the competent courts located in <strong>Jaipur, Rajasthan, India</strong>.</p>
+      </div>
+
+      <div class="legal-section">
+        <h2>12. Contact & Grievance Redressal</h2>
+        <p>If you have any questions, feedback, or grievances regarding these terms, please contact our hospital administrative office:</p>
+        <ul>
+          <li><strong>Emergency Helpline:</strong> +91 74120 48766</li>
+          <li><strong>Ambulance Helpline:</strong> 0141-23 88 999</li>
+          <li><strong>Institution:</strong> NIMS Hospital, Jaipur, Rajasthan, India</li>
+          <li><strong>Official Website:</strong> <a href="https://nimshospitals.net/" target="_blank" rel="noopener" style="color:var(--gold-light);">nimshospitals.net</a></li>
+        </ul>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="index.html" class="footer-link">Home</a>
+      <span class="footer-sep">•</span>
+      <a href="about.html" class="footer-link">About Us</a>
+      <span class="footer-sep">•</span>
+      <a href="terms.html" class="footer-link active">Terms & Conditions</a>
+      <span class="footer-sep">•</span>
+      <a href="privacy.html" class="footer-link">Privacy Policy</a>
+    </div>
+    <p><b>NIMS Tatkal Seva — 24×7 Care, Just a Tap Away</b></p>
+    <p class="footer-copy">© 2026 NIMS Tatkal Seva. All Rights Reserved. Unit Of NIMS Hospital, Jaipur</p>
+  </footer>
+</body>
+
+</html>
